@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatButtonModule, MatIconModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatIconModule, MatCardModule, MatInputModule, MatFormFieldModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 export const MATERIAL_MODULES = [
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule
 ];
 @NgModule({
     declarations: [],

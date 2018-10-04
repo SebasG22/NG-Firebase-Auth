@@ -14,7 +14,33 @@
     --github-bg-color: 	#24292e;
     --github-contrast-color: #fff;
     --primary-bg-color: #ff7373;
-    --primary-contrast-color: #fff
+    --primary-contrast-color: #fff;
+    --secondary-bg-color: #008489;
+    --secondary-contrast-color: #fff;
+}
+
+.bg-primary-bg-color{
+    background-color:  var(--primary-bg-color);
+}
+
+.bg-secondary-bg-color{
+    background-color:  var(--secondary-bg-color);
+}
+
+.contrast-primary-contrast-color{
+    color: var(--primary-contrast-color);
+}
+
+.contrast-primary-bg-color{
+    color: var(--primary-bg-color);
+}
+
+.contrast-secondary-contrast-color{
+    color: var(--secondary-contrast-color);
+}
+
+.contrast-secondary-bg-color{
+    color: var(--secondary-bg-color);
 }
 
 body{
