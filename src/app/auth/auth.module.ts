@@ -4,6 +4,8 @@ import { COMPONENTS } from './components';
 import { AuthRoutingModule } from './auth.routing';
 import { PAGES } from './pages';
 import { SharedModule } from '../shared/shared.module';
+import { StoreModule } from '@ngrx/store';
+import { reducers } from './reducers/auth.reducer';
 
 @NgModule({
     declarations: [
@@ -13,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     imports: [
         CommonModule,
         AuthRoutingModule,
-        SharedModule
+        SharedModule,
+        StoreModule.forFeature('AuthFeatureModel', reducers)
     ],
     exports: [],
     providers: [],

@@ -12,8 +12,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.router';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { StoreModule, ActionReducer } from '@ngrx/store';
+import { storeLogger } from 'ngrx-store-logger';
+import * as appReducer from './app.reducer';
 
+export const metaReducers = environment.production ? [] : [logger];
 
+export function logger(reducer: ActionReducer<any>): any {
+  // default, no options
+  return storeLogger()(reducer);
+}
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -26,9 +34,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AngularFireAuthModule,
     AngularFirestoreModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    StoreModule.forRoot(appReducer.reducersToken, { metaReducers })
   ],
   providers: [
+    appReducer.reducerProvider
   ],
   bootstrap: [AppComponent]
 })

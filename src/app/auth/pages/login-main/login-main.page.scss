@@ -1,0 +1,34 @@
+.btn-wrapper-text{
+    font-family: Roboto, sans-serif !important;
+    font-weight: bold !important;
+}
+
+.btn-facebook{
+    background-color: var(--facebook-bg-color);
+    color: var(--facebook-contrast-color);
+}
+
+.btn-google{
+    background-color: var(--google-bg-color);
+    color: var(--google-contrast-color);
+}
+
+.btn-email{
+    background-color: var(--main-bg-color);
+    color: var(--main-contrast-color);
+}
+
+.btn-github{
+    background-color: var(--github-bg-color);
+    color: var(--github-contrast-color);
+}
+
+.link-create-account{
+    p{
+        font-size: 15px;
+        a{
+            color: var(--primary-bg-color);
+            text-decoration: underline;
+        }
+    }
+}

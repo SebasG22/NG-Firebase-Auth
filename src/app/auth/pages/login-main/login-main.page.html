@@ -1,14 +1,42 @@
 <h1> Auth </h1>
 
-
 <div fxLayout="column" fxLayoutAlign="center center">
-    <div fxFlex>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" />
-    </div>
-    <div fxFlex fxLayout="column">
-        <div fxFlex>
-            <button mat-button-icon color="primary">Basic</button>
-        </div>
-    </div>
+    <div fxFlex class="btn-wrapper">
+        <mat-card fxLayout="column">
+            <div fxFlex>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/250px-Angular_full_color_logo.svg.png" />
+            </div>
+            <div fxFlex>
+                <button mat-button class="btn-facebook btn-wrapper-text w-full" (click)="onLoggingWith('facebook')">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="ml-2">Facebook</span>
+                </button>
+            </div>
+            <div fxFlex class="mt-3">
+                <button mat-button class="btn-google btn-wrapper-text w-full" (click)="onLoggingWith('google')">
+                    <i class="fab fa-google"></i>
+                    <span class="ml-3">Google&nbsp;&nbsp;</span>
+                </button>
+            </div>
+            <div fxFlex class="mt-3">
+                <button mat-button class="btn-github btn-wrapper-text w-full" (click)="onLoggingWith('github')">
+                    <i class="fab fa-github"></i>
+                    <span class="ml-2">Github&nbsp;&nbsp;</span>
+                </button>
+            </div>
 
+            <div fxFlex class="mt-3">
+                <button mat-button class="btn-email btn-wrapper-text w-full" (click)="onLoggingWith('email')">
+                    <i class="fas fa-envelope"></i>
+                    <span class="ml-2">Email&nbsp;&nbsp;&nbsp;</span>
+                </button>
+            </div>
+
+            <div fxFlex fxFlexAlign="center" class="mt-3 btn-wrapper-text link-create-account ">
+                <p> ¿ No tienes cuenta ?
+                    <a> Regístrate</a>
+                </p>
+            </div>
+        </mat-card>
+    </div>
 </div>

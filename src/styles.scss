@@ -1,7 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+*{
+    font-family: "Google Sans", sans-serif;
+}
 :root{
-    --main-bg-color: brown;
+    --main-bg-color: #fbfbfb;
+    --main-contrast-color: #212121;
+    --facebook-bg-color: #3b5998;
+    --facebook-contrast-color: #fff;
+    --google-bg-color: 	#d62d20;
+    --google-contrast-color: #fff;
+    --github-bg-color: 	#24292e;
+    --github-contrast-color: #fff;
+    --primary-bg-color: #ff7373;
+    --primary-contrast-color: #fff
+}
+
+body{
+    background-color: var(--main-bg-color);
 }
 
